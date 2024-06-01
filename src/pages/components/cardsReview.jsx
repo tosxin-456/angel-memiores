@@ -11,7 +11,7 @@ const Reviews = ({ data }) => {
   return (
     <Card 
     backgroundColor={'rgba(228, 157, 157, 0.37)'}
-    textAlign="start" maxW="lg" p="1.5em" minW="26em" className=" rounded-sm" >
+    textAlign="start" maxW="lg" p="1.5em" minW="24em" className=" rounded-sm" >
           <CardHeader 
           width={'100%'}
           >

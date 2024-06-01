@@ -64,7 +64,7 @@ function StartPage() {
             </HStack>
         <HStack
         ml={'auto'}
-        m={'50px'}
+        // m={'50px'}
         >
         <Image    
         zIndex={-1}  
@@ -76,7 +76,7 @@ function StartPage() {
         <Text
         fontFamily='"Satoshi", "sans-serif"'
         fontWeight={'500'}
-        className='text-xl text-[#676262] '
+        className='text-lg text-[#676262] '
         >Swipe Left</Text>
         </HStack>
         </Flex>
