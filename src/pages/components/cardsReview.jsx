@@ -23,12 +23,19 @@ const Reviews = ({ data }) => {
         <CardBody
         className="m-[10px]"
         >
-        <Text 
+         <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      className=" w-fit h-[190px]"
+    >
+      <Text 
         fontFamily='"Satoshi", "sans-serif"'
-        className="text-center text-[21px] h-[190px] w-[95%] m-auto "
-        >
-          {data.msg}
-        </Text>
+        className="text-center text-[21px]  w-[95%] m-auto"
+      >
+        {data.msg}
+      </Text>
+       </Box>
       </CardBody>
       <CardFooter>
         <Box width={'10'}  gap={1}
