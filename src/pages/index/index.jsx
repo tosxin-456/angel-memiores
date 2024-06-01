@@ -9,7 +9,7 @@ import heart from '../../assets/love images/heart.svg'
 import Why from '../../assets/love images/why I Love You.svg'
 import Review from '../components/cards'
 import Gallery from '../components/gallery'
-
+import Video from '../components/video'
 
 
 
@@ -19,11 +19,12 @@ function StartPage() {
     <Box>
       <Box
       margin={'auto'}
+      mt={'55px'}
       className=' w-[80%] lg:w-[45%] '
       >
         <Image src={img1}
         m={'auto'}
-        className='w-[60%] lg:w-[50%]' />
+        className='w-[55%] lg:w-[50%]' />
       </Box>
       <Box
       width={'95%'}
@@ -38,7 +39,7 @@ function StartPage() {
      </Flex>
      <Box>
        <Image 
-      width={'200px'}
+      width={'300px'}
       src={rose} 
       marginLeft={'auto'}
       id='rose'/>
@@ -55,7 +56,7 @@ function StartPage() {
                 mt={'30px'}
                 >
                    <Image 
-                  width={'100px'}  
+                  width={'130px'}  
                   src={Why}/>    
                 </Box>
             <Image 
@@ -82,6 +83,7 @@ function StartPage() {
         </Flex>
       </Box>
        <Gallery/>
+       <Video/>
     </Box>
   )
 }
