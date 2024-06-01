@@ -14,7 +14,7 @@ const Video = () => {
     className='m-[50px]'
     >
     <Box 
-      className="relative overflow-hidden w-[80%] h-[400px] bg-cover bg-center bg-no-repeat  m-auto " 
+      className="relative overflow-hidden w-[95%] h-[400px] bg-cover bg-center bg-no-repeat  m-auto " 
       style={{ backgroundColor: '#D5D5D5' }}
     >
       {!isPlaying && (
