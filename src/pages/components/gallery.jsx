@@ -11,7 +11,7 @@ function Gallery() {
      margin={'70px'}
      >
       <Heading
-      width={'80%'}
+      width={'90%'}
       margin={'auto'}
       >
         <Image width={'100%'} src={GalleryHeader}   />

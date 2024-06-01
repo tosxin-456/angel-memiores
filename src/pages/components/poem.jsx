@@ -35,7 +35,7 @@ function Poem() {
         <Box
         width={'90%'}
         >
-       <Image width={'30%'} maxW={'230px'} src={header} 
+       <Image width={'35%'} maxW={'230px'} src={header} 
        marginLeft={'auto'}/>
         </Box>
       <Box
