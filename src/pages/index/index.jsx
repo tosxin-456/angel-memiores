@@ -10,6 +10,8 @@ import Why from '../../assets/love images/why I Love You.svg'
 import Review from '../components/cards'
 import Gallery from '../components/gallery'
 import Video from '../components/video'
+import Flower from '../components/flower'
+import Poem from '../components/poem'
 
 
 
@@ -72,18 +74,28 @@ function StartPage() {
         position={'absolute'} 
         width={'30px'} 
         src={flower} id='sway'
-        marginLeft={'70px'}
+        marginLeft={'50px'}
         /> 
         <Text
         fontFamily='"Satoshi", "sans-serif"'
         fontWeight={'500'}
-        className='text-lg text-[#676262] '
+        className='text-xl text-[#676262] '
         >Swipe Left</Text>
         </HStack>
         </Flex>
       </Box>
        <Gallery/>
        <Video/>
+       <Poem/>
+       {/* <Box 
+          zIndex={-5}  
+          position={'absolute'} 
+          width={'100%'}
+          top={0} 
+          src={flower} 
+       className='z-[-1] ' >
+       <Flower/>
+       </Box> */}
     </Box>
   )
 }

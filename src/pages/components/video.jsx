@@ -11,15 +11,15 @@ const Video = () => {
 
   return (
     <Box
-    className='m-[50px]'
+    className='m-[50px] border-[1px] p-[15px]  '
     >
     <Box 
-      className="relative overflow-hidden w-[95%] h-[400px] bg-cover bg-center bg-no-repeat  m-auto " 
+      className="relative overflow-hidden w-[90%] lg:w-[70%] h-[250px] lg:h-[400px] bg-cover bg-center bg-no-repeat rounded-lg  m-auto " 
       style={{ backgroundColor: '#D5D5D5' }}
     >
       {!isPlaying && (
         <Button
-          className="absolute inset-0 flex items-center justify-center w-full mt-[150px] bg-opacity-50"
+          className="absolute inset-0 flex items-center justify-center w-full mt-[100px] lg:mt-[150px] bg-opacity-50"
           onClick={handlePlay}
         >
           <Image src={Play} className='m-auto  ' />
