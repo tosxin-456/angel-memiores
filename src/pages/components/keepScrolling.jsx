@@ -6,8 +6,8 @@ import React from 'react'
 function KeepScrolling() {
   return (
     <Box
-    marginTop={'500px'}
-    marginBottom={'500px'}
+    marginTop={'150px'}
+    marginBottom={'700px'}
     fontFamily='"Satoshi", "sans-serif"'
     fontWeight={'500'}
     className='text-2xl text-center'

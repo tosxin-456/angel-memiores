@@ -7,7 +7,7 @@ function LittleMore() {
   return (
     <Box
     marginTop={'500px'}
-    marginBottom={'100px'}
+    marginBottom={'400px'}
     fontFamily='"Satoshi", "sans-serif"'
     fontWeight={'500'}
     className='text-2xl text-center'

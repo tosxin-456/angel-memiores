@@ -11,10 +11,10 @@ const Video = () => {
 
   return (
     <Box
-    className='m-[50px] border-[1px] p-[7px]  '
+    className=' border-[1px] p-[10px] pt-[25px] pb-[25px] w-[100%] '
     >
     <Box 
-      className="relative overflow-hidden w-[100%] lg:w-[70%] h-[250px] lg:h-[400px] bg-cover bg-center bg-no-repeat rounded-lg  m-auto " 
+      className="relative overflow-hidden w-[92%] lg:w-[70%] h-[250px] lg:h-[400px] bg-cover bg-center bg-no-repeat rounded-lg  m-auto " 
       style={{ backgroundColor: '#D5D5D5' }}
     >
       {!isPlaying && (
