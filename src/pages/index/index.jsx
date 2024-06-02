@@ -12,6 +12,12 @@ import Gallery from '../components/gallery'
 import Video from '../components/video'
 import Flower from '../components/flower'
 import Poem from '../components/poem'
+import LoveImage from '../components/loveImage'
+import KeepScrolling from '../components/keepScrolling'
+import LittleMore from '../components/LittleMore'
+import WillyouBe from '../components/will yoube'
+
+
 
 
 
@@ -72,9 +78,9 @@ function StartPage() {
         <Image    
         zIndex={-1}  
         position={'absolute'} 
-        width={'30px'} 
+        width={'20px'} 
         src={flower} id='sway'
-        marginLeft={'50px'}
+        marginLeft={'70px'}
         /> 
         <Text
         fontFamily='"Satoshi", "sans-serif"'
@@ -87,6 +93,12 @@ function StartPage() {
        <Gallery/>
        <Video/>
        <Poem/>
+       <LoveImage/>
+       <KeepScrolling/>
+       <KeepScrolling/>
+       <KeepScrolling/>
+       <LittleMore/>
+       <WillyouBe/>
        {/* <Box 
           zIndex={-5}  
           position={'absolute'} 

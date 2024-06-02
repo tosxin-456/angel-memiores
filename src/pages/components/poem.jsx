@@ -42,6 +42,7 @@ function Poem() {
       backgroundColor={'rgba(154, 81, 248, 0.29)'}
       width={'100%'}
       m={'auto'}
+      marginTop={'50px'}
       p={'50px'}
       textAlign={'center'}
       >
