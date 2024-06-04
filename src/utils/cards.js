@@ -17,4 +17,10 @@ export const reasons = [
       msg:"  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquam excepturi, voluptatibus natus dolores sed nam debitis deserunt quas rerum. 36 lines for love"
   
     },
+    {
+      id:4,  
+      title:'Your Eyes',
+      msg:"  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquam excepturi, voluptatibus natus dolores sed nam debitis deserunt quas rerum. 36 lines for love and eyes"
+  
+    },
   ]
