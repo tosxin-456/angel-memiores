@@ -39,7 +39,7 @@ function Poem() {
        marginLeft={'auto'}/>
         </Box>
       <Box
-      backgroundColor={'rgba(154, 81, 248, 0.29)'}
+      backgroundColor={'rgba(0, 0, 0, 0.84)'}
       width={'100%'}
       m={'auto'}
       marginTop={'50px'}
@@ -47,10 +47,12 @@ function Poem() {
       textAlign={'center'}
       >
         <Text
+          fontFamily="'Cedarville Cursive', 'cursive'"
+
         as="div" display="inline-block"
         width={'80%'}
         margin={'auto'}
-        fontSize={'20px'}
+        fontSize={'25px'}
         color={'#F18686'}
         >
         <span ref={el}></span>
