@@ -7,7 +7,7 @@ function KeepScrolling() {
   return (
     <Box
     marginTop={'250px'}
-    marginBottom={'700px'}
+    marginBottom={'1000px'}
     fontFamily='"Satoshi", "sans-serif"'
     fontWeight={'500'}
     className='text-2xl text-center'

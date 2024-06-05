@@ -10,6 +10,7 @@ import { StarIcon } from "@chakra-ui/icons";
 const Reviews = ({ data }) => {
   return (
     <Card 
+    zIndex={10}
     backgroundColor={'rgba(228, 157, 157, 0.37)'}
     textAlign="start" maxW="lg" p="1.5em" minW="24em" className=" rounded-sm" >
           <CardHeader 

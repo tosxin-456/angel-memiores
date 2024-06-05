@@ -16,8 +16,9 @@ import LoveImage from '../components/loveImage'
 import KeepScrolling from '../components/keepScrolling'
 import LittleMore from '../components/LittleMore'
 import WillyouBe from '../components/will yoube'
-
-
+import Butterfly from '../components/Butterfly'
+import Butterflyanimation from '../components/butterflyanimation'
+import ButterflyPoem from '../components/butterflyPoem'
 
 
 
@@ -98,7 +99,13 @@ function StartPage() {
        <KeepScrolling/>
        <KeepScrolling/>
        <LittleMore/>
+       <ButterflyPoem/>
+       {/* <ButterflyPoem/> */}
+
        <WillyouBe/>
+       {/* <Butterflyanimation/> */}
+
+       {/* <Butterfly/> */}
        {/* <Box 
           zIndex={-5}  
           position={'absolute'} 
