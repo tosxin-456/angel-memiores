@@ -1,7 +1,19 @@
 import React from 'react'
 import { Button, Box, Flex, Text } from '@chakra-ui/react'
+import confetti from 'canvas-confetti';
 
 function YesOrNo() {
+    const colors = ['#9F7DCC', '#D7619C', '#A83939', '#BF9A9A'];
+
+    const handleYesClick = () => {
+      confetti({
+        particleCount: 300,
+        spread: 150,
+        origin: { y: 0.7 },
+        colors,
+        disableForReducedMotion: true
+      });
+    };
   return (
     <Box
       margin={'auto'}
@@ -20,6 +32,7 @@ function YesOrNo() {
           bg={'#917BAF'}
           zIndex={1000}  // Set a high z-index
           className='p-[15px] w-[40%] rounded-lg '
+          onClick={handleYesClick}
         >
           Yes
         </Button>
@@ -61,7 +74,7 @@ function YesOrNo() {
         //   cols="100"
           
           className='border-[1px] m-auto p-[7px] rounded-sm outline-none w-[100%] max-w-[40rem]  '
-          placeholder='Write something sweet...'
+          placeholder='Write anything,...'
           style={{ 
             zIndex: 1000, 
             position: 'relative',
@@ -91,3 +104,6 @@ function YesOrNo() {
 }
 
 export default YesOrNo
+
+
+ 

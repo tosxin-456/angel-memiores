@@ -20,6 +20,7 @@ import Butterfly from '../components/Butterfly'
 import Butterflyanimation from '../components/butterflyanimation'
 import ButterflyPoem from '../components/butterflyPoem'
 import YesOrNo from '../components/yesOrNo'
+import Yes from '../components/yes'
 
 
 
@@ -104,7 +105,7 @@ function StartPage() {
 
        <WillyouBe/>
       <YesOrNo/>
-        
+      {/* <Yes/> */}
     </Box>
   )
 }
