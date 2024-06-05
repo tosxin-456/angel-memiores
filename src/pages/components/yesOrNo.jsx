@@ -47,7 +47,9 @@ function YesOrNo() {
         </Text>
       </Box>
       <Box
-        width={'fit-content'}
+        width={'90%'}
+        maxWidth={'40rem'}
+        // background={'black'}
         margin={'auto'}
         zIndex={1000}  // Set a high z-index
         position={'relative'}  // Ensure the z-index takes effect
@@ -55,8 +57,10 @@ function YesOrNo() {
         <textarea
           id="multiline-input"
           rows="10"
-          cols="50"
-          className='border-[1px] m-auto p-[7px] rounded-sm outline-none'
+          
+        //   cols="100"
+          
+          className='border-[1px] m-auto p-[7px] rounded-sm outline-none w-[100%] max-w-[40rem]  '
           placeholder='Write something sweet...'
           style={{ 
             zIndex: 1000, 
