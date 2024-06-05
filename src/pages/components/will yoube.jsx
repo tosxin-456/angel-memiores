@@ -14,12 +14,12 @@ function WillyouBe() {
     <Box position="relative" marginTop="70px" width="100%" height="100vh" id="container">
       <Image width="100%" height="auto" src={fall} />
       <Grid
-        templateColumns="repeat(10, 1fr)"
-        templateRows="repeat(10, 1fr)"
+        templateColumns="repeat(7, 1fr)"
+        templateRows="repeat(5, 1fr)"
         position="absolute"
         top="0"
         left="0"
-        width="100%"
+        width="50%"
         height="100%"
         gap="0"
         zIndex="2"

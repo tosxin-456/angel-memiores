@@ -5,7 +5,7 @@ const MovingCircles = ({ color }) => {
   const [circles, setCircles] = useState([]);
 
   useEffect(() => {
-    const numCircles = 350;
+    const numCircles = 50;
     const newCircles = Array.from({ length: numCircles }).map((_, index) => ({
       id: index,
       top: Math.random() * 100,
