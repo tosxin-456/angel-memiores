@@ -19,7 +19,7 @@ import WillyouBe from '../components/will yoube'
 import Butterfly from '../components/Butterfly'
 import Butterflyanimation from '../components/butterflyanimation'
 import ButterflyPoem from '../components/butterflyPoem'
-
+import YesOrNo from '../components/yesOrNo'
 
 
 
@@ -103,18 +103,8 @@ function StartPage() {
        {/* <ButterflyPoem/> */}
 
        <WillyouBe/>
-       {/* <Butterflyanimation/> */}
-
-       {/* <Butterfly/> */}
-       {/* <Box 
-          zIndex={-5}  
-          position={'absolute'} 
-          width={'100%'}
-          top={0} 
-          src={flower} 
-       className='z-[-1] ' >
-       <Flower/>
-       </Box> */}
+      <YesOrNo/>
+        
     </Box>
   )
 }
