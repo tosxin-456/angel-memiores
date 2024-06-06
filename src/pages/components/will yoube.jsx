@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import fall from '../../assets/love images/Will you be.svg';
-import { Image, Box, Grid } from '@chakra-ui/react';
+import { Image, Box, Grid, Text } from '@chakra-ui/react';
 import '../../css/heart.css'
 
 function WillyouBe() {
@@ -11,7 +11,14 @@ function WillyouBe() {
   };
 
   return (
-    <Box position="relative" marginTop="70px" width="100%" height="100vh" id="container">
+    <Box>
+      <Text
+         fontFamily='"Satoshi", "sans-serif"'
+      textAlign={'center'}
+      >
+        Click on the hearts 
+      </Text>
+     <Box position="relative" marginTop="70px" width="100%" height="100vh" id="container">
       <Image width="100%" height="auto" src={fall} />
       <Grid
         templateColumns="repeat(10, 1fr)"
@@ -39,6 +46,7 @@ function WillyouBe() {
       </Grid>
 
     </Box>
+    </Box>   
   );
 }
 
