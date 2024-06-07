@@ -117,7 +117,7 @@ function YesOrNo() {
           bg="#F18686"
           padding={'10px'}
           zIndex={1000}
-          onMouseEnter={handleNoHover}
+          onClick={handleNoHover}
           isLoading={isLoadingNo}
         >
           No
