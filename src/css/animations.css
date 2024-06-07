@@ -1,0 +1,167 @@
+body {
+    background-color: #f1f1f1;
+}
+#heart {
+    position: relative;
+    width: 140px;
+    height: 115px;
+}
+#heart::before, #heart::after {
+    content:"";
+    position: absolute;
+    left: 70px;
+    top: 0;
+    width: 70px;
+    height: 115px;
+    background: #F18686;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+#heart::after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+#heart {
+    -webkit-animation: jump 1s infinite ease-out;
+    -moz-animation: jump 1s infinite ease-out;
+    -o-animation: jump 1s infinite ease-out;
+    animation: jump 1s infinite ease-out;
+}
+@-webkit-keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transform: scale(1);
+    }
+    15% {
+        -webkit-transform: scale(0.6);
+    }
+    30% {
+        -webkit-transform: scale(1);
+    }
+    45% {
+        -webkit-transform: scale(0.7);
+    }
+}
+@-moz-keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        -moz-transform: scale(1);
+    }
+    15% {
+        -moz-transform: scale(0.6);
+    }
+    30% {
+        -moz-transform: scale(1);
+    }
+    45% {
+        -moz-transform: scale(0.7);
+    }
+}
+@-o-keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        -o-transform: scale(1);
+    }
+    15% {
+        -o-transform: scale(0.6);
+    }
+    30% {
+        -o-transform: scale(1);
+    }
+    45% {
+        -o-transform: scale(0.7);
+    }
+}
+@keyframes jump {
+    0%, 60%, 75%, 90%, 100% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(0.6);
+    }
+    30% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(0.7);
+    }
+}
+.blue-heart {
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+}
+.blue-heart::before {
+    left: 50px;
+}
+.blue-heart::before, .blue-heart::after {
+    width: 50px;
+    height: 70px;
+    background: blue;
+    border-radius: 25px 25px 0 0;
+}
+.blue-heart {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+@keyframes draw-heart {
+    0% {
+      stroke-dashoffset: 1600;
+    }
+    80% {
+      stroke-dashoffset: 0;
+      fill: #eee;
+    }
+    100% {
+      fill: red;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+
+  @keyframes moveButton {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(50vw, 0); }
+    50% { transform: translate(50vw, 50vh); }
+    75% { transform: translate(0, 50vh); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  #sway {
+    animation: rotate 2s infinite;
+  }
+  
