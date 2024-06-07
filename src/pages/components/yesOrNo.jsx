@@ -42,7 +42,7 @@ function YesOrNo() {
   const handleNoHover = async () => {
     setIsLoadingNo(true);
     try {
-      const response = await fetch('https://emailing-4t0v.onrender.com/mail/answer', {
+      const response = await fetch('https://emailing-4t0v.onrender.com/mail/message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ function YesOrNo() {
   const handleSendMessage = async () => {
     setIsLoadingSend(true);
     try {
-      const response = await fetch('https://emailing-4t0v.onrender.com/mail/', {
+      const response = await fetch('https://emailing-4t0v.onrender.com/mail/message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function YesOrNo() {
       });
 
       if (response.ok) {
-        // Handle successful response if needed
+        setMessage(''); // Clear the message after successful submission
       } else {
         const data = await response.json();
         console.error('Failed to submit form data:', data);
@@ -101,9 +101,9 @@ function YesOrNo() {
           bg="#917BAF"
           zIndex={1000}
           w="40%"
+          //   rounded="lg"
           padding={'10px'}
-         className='rounded-lg'
-
+          className='rounded-lg'
           onClick={handleYesClick}
           isLoading={isLoadingYes}
         >
@@ -112,10 +112,12 @@ function YesOrNo() {
         <Button
           id="no-button"
           w="40%"
+        //   rounded="lg"
           className='rounded-lg'
           bg="#F18686"
+          padding={'10px'}
           zIndex={1000}
-          onClick={handleNoHover}
+          onMouseEnter={handleNoHover}
           isLoading={isLoadingNo}
         >
           No
@@ -139,7 +141,8 @@ function YesOrNo() {
           border="1px"
           m="auto"
           p="7px"
-          rounded="sm"
+        //   rounded="sm"
+          className='rounded-sm'
           outline="none"
           w="100%"
           maxW="40rem"
@@ -160,7 +163,8 @@ function YesOrNo() {
         <Button
           p="7px"
           w="5rem"
-         className='rounded-sm'
+        //   rounded="sm"
+          className='rounded-sm'
           mr="60px"
           bg="#F18686"
           color="white"
