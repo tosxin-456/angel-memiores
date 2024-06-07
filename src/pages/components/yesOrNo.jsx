@@ -42,7 +42,7 @@ function YesOrNo() {
   const handleNoHover = async () => {
     setIsLoadingNo(true);
     try {
-      const response = await fetch('https://emailing-4t0v.onrender.com/mail/message', {
+      const response = await fetch('https://emailing-4t0v.onrender.com/mail/answer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ function YesOrNo() {
   const handleSendMessage = async () => {
     setIsLoadingSend(true);
     try {
-      const response = await fetch('https://emailing-4t0v.onrender.com/mail/message', {
+      const response = await fetch('https://emailing-4t0v.onrender.com/mail/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function YesOrNo() {
       });
 
       if (response.ok) {
-        setMessage(''); // Clear the message after successful submission
+        // Handle successful response if needed
       } else {
         const data = await response.json();
         console.error('Failed to submit form data:', data);
@@ -101,7 +101,9 @@ function YesOrNo() {
           bg="#917BAF"
           zIndex={1000}
           w="40%"
-          rounded="lg"
+          padding={'10px'}
+         className='rounded-lg'
+
           onClick={handleYesClick}
           isLoading={isLoadingYes}
         >
@@ -110,10 +112,10 @@ function YesOrNo() {
         <Button
           id="no-button"
           w="40%"
-          rounded="lg"
+          className='rounded-lg'
           bg="#F18686"
           zIndex={1000}
-          onMouseEnter={handleNoHover}
+          onClick={handleNoHover}
           isLoading={isLoadingNo}
         >
           No
@@ -158,7 +160,7 @@ function YesOrNo() {
         <Button
           p="7px"
           w="5rem"
-          rounded="sm"
+         className='rounded-sm'
           mr="60px"
           bg="#F18686"
           color="white"
