@@ -11,15 +11,15 @@ function Poem() {
       if (el.current) {
         const typed = new Typed(el.current, {
           strings: [
+            `
+        How do I love thee? Let me count the ways. I love thee to the depth and breadth and height My soul can reach, when feeling out of sight For the ends of being and ideal grace. I love thee to the level of every day's Most quiet need, by sun and candlelight. I love thee freely, as men strive for right; I love thee purely, as they turn from praise. I love thee with the passion put to use In my old griefs, and with my childhood's faith. I love thee with a love I seemed to lose With my lost saints, I love thee with the breath, Smiles, tears, of all my life; and, if God choose, I shall but love thee better after death.
+        #copied
           `
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maiores quasi voluptatibus fuga, optio aut, molestiae quam cumque omnis quae numquam esse quisquam possimus. Esse quas aut consectetur numquam tempora mollitia iusto, sed expedita temporibus laboriosam adipisci possimus assumenda, optio et veritatis aspernatur? Eos totam aliquam natus dolorum quisquam nesciunt maiores architecto officia assumenda odio, veritatis sequi illo repellendus, vitae explicabo error corporis provident sint, rem nulla voluptatum tempore neque dolor minima? Deserunt id, delectus sit ducimus excepturi quis voluptatibus temporibus sapiente quae rerum pariatur asperiores officia minima exercitationem enim qui expedita vel repellendus alias accusantium fuga! Commodi, distinctio temporibus.
-          ` 
-          
           ],
           typeSpeed: 200,
           backSpeed: 200,
           backDelay: 1000,
-          loop: true,
+          loop: true
         });
   
         return () => {

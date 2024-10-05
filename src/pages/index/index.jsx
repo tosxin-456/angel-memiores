@@ -10,17 +10,9 @@ import Why from '../../assets/love images/why I Love You.svg'
 import Review from '../components/cards'
 import Gallery from '../components/gallery'
 import Video from '../components/video'
-import Flower from '../components/flower'
 import Poem from '../components/poem'
 import LoveImage from '../components/loveImage'
-import KeepScrolling from '../components/keepScrolling'
-import LittleMore from '../components/LittleMore'
-import WillyouBe from '../components/will yoube'
-import Butterfly from '../components/Butterfly'
-import Butterflyanimation from '../components/butterflyanimation'
 import ButterflyPoem from '../components/butterflyPoem'
-import YesOrNo from '../components/yesOrNo'
-import Yes from '../components/yes'
 
 
 
@@ -30,11 +22,11 @@ function StartPage() {
       <Box
       margin={'auto'}
       mt={'55px'}
-      className=' w-[80%] lg:w-[45%] '
+      className=' w-[85%] lg:w-[45%] '
       >
         <Image src={img1}
         m={'auto'}
-        className='w-[55%] lg:w-[50%]' />
+        className='w-[100%] lg:w-[60%]' />
       </Box>
       <Box
       width={'95%'}
@@ -96,16 +88,7 @@ function StartPage() {
        <Video/>
        <Poem/>
        <LoveImage/>
-       <KeepScrolling/>
-       <KeepScrolling/>
-       <KeepScrolling/>
-       <LittleMore/>
        <ButterflyPoem/>
-       {/* <ButterflyPoem/> */}
-
-       <WillyouBe/>
-      <YesOrNo/>
-      {/* <Yes/> */}
     </Box>
   )
 }
